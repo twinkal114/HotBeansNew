@@ -455,30 +455,29 @@ margin:40px;
 .full-cta {
     background: #7c2222;
     color: white;
-    text-align: center;
-    padding: 60px 20px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;      /* stack h2, p, and button vertically */
+    justify-content: center;     /* vertical centering */
+    align-items: center;         /* horizontal centering */
+    text-align: center;          /* center text inside the block */
     width: 100%;
+    min-height: 60vh;            /* section height (adjustable) */
+    padding: 60px 20px;
     margin-top: 40px;
-    
 }
-    .full-cta h2 {
-        font-size: 32px;
-        margin-bottom: 15px;
-    }
-
-    .full-cta p {
-        font-size: 18px;
-        margin-bottom: 25px;
-    }
-
-    .full-cta .button {
-        padding: 15px 30px; /* make button bigger for CTA */
-        font-size: 16px;
-    }
+.full-cta h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+.full-cta p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    max-width: 800px;           /* limits line length for readability */
+}
+.full-cta .button {
+    padding: 15px 30px; 
+    font-size: 16px;
+}
 .role-button{
 display:inline-block;
 margin-top:10px;
